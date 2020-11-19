@@ -1,8 +1,9 @@
-* { /* Gælder alt på hele siden */
-  box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
-}
+@import "_colors";
 
-/* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
+
+* { /* Gælder alt på hele siden */
+  box-sizing: border-box;
+}
 
 body {
   margin: 0; /* Ingen kanter i siden af browser */
@@ -33,4 +34,78 @@ img {
   display: block; /* Billeder er et element (laver linjeskift) */
   max-width: 100%; /* Bredde må maks fylde 100% */
   height: auto; /* Højden skal tilpasse sig */
+}
+
+h1.font-weight-light {
+  color: $textColor;
+  font-size: 48px;
+}
+
+.navbar-nav{
+  position: absolute;
+}
+
+.mt-n6 {
+  margin-top: -5rem !important;
+}
+
+header {
+  background: linear-gradient($imgColor, $imgColor), url("../img/bridge-header.jpg"), no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.headerpad {
+  padding: 350px 0 0 0;
+}
+
+.borderWrap{
+  width: 220px;
+  height: 60px;
+  background: $mainBlue;
+}
+
+.ctaBtn{
+  background: $mainGray;
+  width: 205px;
+  height: 45px;
+  border: none;
+  margin: 0 10px;
+}
+
+.AstraBorderWrap{
+  width: 220px;
+  height: 60px;
+  background:$mainBlue;
+}
+.AstraBtn{
+  background:white;
+  width: 205px;
+  height: 45px;
+  border: none;
+  margin: 0 10px;
+}
+
+.icons {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto !important;
+}
+
+.iconCardBody{
+  align-self: center;
+  width: 60%;
+}
+
+.blue{
+  border-color:$mainBlue !important;
+  color:$mainBlue!important;
+}
+.gray-box{
+  background-color: $mainGray;
+}
+
+.margin-auto{
+  margin: auto;
 }
